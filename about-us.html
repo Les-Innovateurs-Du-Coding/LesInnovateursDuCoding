@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    
+</head>
+<body>
+    <nav class="nav">
+        <img class="logo-nav" src="./images/full-logo.png" alt="" height="50px" width="45px">
+        <a class="bouton-nav marge btn" href="index.html"> Home</a>
+        <a class="bouton-nav" href="contact.html">Contact</a>
+        <a class="bouton-nav" href="about-us.html">About Us</a>
+        <a class="bouton-nav" href="projet.html">Projets</a>
+   
+
+    </nav> 
+    <br><br><br><br>
+    <div class="main">
+         <img src="images/antit.png" alt="">
+         <h4 id="Antit-Btn">Ahmed Antit &#x25BC;</h4>
+         <p id="Antit-Text">Salut, mon nom est Ahmed Antit, j'ai 15 ans , j'étudie actuellement au lycée ali balhawen, j'aime l'informatique j'ai appri le html, css , java script et c++ mais aussi je sait utiliser scratch et appinventor, j'aime le basket , la musculation, lire des livres/ mangas, dessiner et écouter de la musique</p>
+         <img src="images/dfgdfgdf" height="200px" width="200px" alt="">
+         <h4 id="Bechi5-Btn">Ahmed Bechikh &#x25BC;</h4>
+         <p id="Bechi5-Text"></p>
+        
+
+    </div>
+
+
+
+
+    <br>
+
+    <footer>
+        <br>
+        <p class="text-footer"> &copy; Ahmed Bechihk, Ahmed Antit,Les Innovateurs  du Coding</p> 
+        <br>
+    </footer>
+    <script>   
+        $("#Antit-Text").hide();
+        $("#Bechi5-Text").hide();
+        let test=0;
+            $("#Antit-Btn").click(function(){
+                if(test == 0){
+                    $("#Antit-Text").fadeOut();
+                    test = 1;
+                }
+                else{
+                    $("#Antit-Text").fadeIn();
+                    test=0;
+                }
+    
+})
+        $("#Bechi5-Text").hide();
+                let test1=0;
+                    $("#Bechi5-Btn").click(function(){
+                        if(test1 == 0){
+                            $("#Bechi5-Text").fadeOut();
+                            test1 = 1;
+                        }
+                        else{
+                            $("#Bechi5-Text").fadeIn();
+                            test1=0;
+                        }
+            
+        })
+
+    </script>
+</body>
+</html>
